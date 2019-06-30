@@ -1,24 +1,35 @@
 <?php
-$json = '{"title":"Memahami JSON Pada PHP - Part II}';
-
-
-$data_mahasiswa_json = json_decode($json);
-$error = json_last_error();
-switch($error) {
-  case 1 : echo "Kedalaman tumpukan maksimum telah terlampaui";break;
-  case 2 : echo "JSON tidak valid atau salah";break;
-  case 3 : echo "Control character error, possibly incorrectly encoded";break;
-  case 4 : echo "Kode Error";break;
-  case 5 : echo "Karakter UTF-8 salah bentuk, mungkin disandikan salah";break;
-  default : echo "Tidak error";break;
-}
-
-echo "<pre>";
-echo "<p><strong>Dalam Bentuk Array</strong></p>";
-print_r($data_mahasiswa_json);
-echo "</pre>";
-
-
+$data_buku = array(
+  "catalog" => [
+      "book" => [
+          [
+            "id"     => "bk101",
+            "author" => "Gambardella, Matthew",
+            "genre"  => "Computer"
+          ],
+          [
+            "id"     => "bk102",
+            "author" => "Ralls, Kim",
+            "genre"  => "Mignight Rain"
+          ]
+        ],
+      "catalog" => [
+          "catalog1" => [
+              "nama" => "shoppe",
+              "url"  => "https://shoppe.com"
+            ],
+          "catalog2" => [
+              "nama" => "buakalapak",
+              "url"  => "https://bukalapak.com"
+            ],
+          "catalog3" => [
+              "nama" => "tokopedia",
+              "url"  => "https://tokopedia.com"
+            ]
+        ],
+      "secure" => true
+    ]
+);
 
 
  ?>
