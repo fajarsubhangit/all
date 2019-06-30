@@ -1,19 +1,18 @@
 <?php
-  $xml = simplexml_load_file("file.xml");
+$link = mysqli_connect("localhost","root","4dm1n242","test1");
+$query  = "SELECT * FROM Artikel WHERE id =1 ";
+$result = mysqli_query($link,$query);
 
+$array = mysqli_fetch_assoc($result);
 
-  if(!$xml) {
-    die("tidak ditemukan");
-  }
-  else {
-    foreach($xml as $key) {
-      echo "ID: " . $key->id . "<br>";
-      echo "Author: ". $key->author."<br>";
-      echo "Genre:".$key->genre."<br>";
-      echo "Price:".$key->price."<br>";
-      echo "publish_date:".$key->publish_date."<br>";
-      echo "description:".$key->description.'<hr>';
-    }
-  }
+$encode = json_encode($array);
+echo json_last_error_msg();
+echo "<p>ARRAY</p>";
+echo "<pre>";print_r($array);echo "</pre>";
+echo "<hr>";
+echo "JSON";
+echo "<pre>";
+echo $encode;
+echo "</pre>";
 
  ?>
