@@ -1,0 +1,16 @@
+{
+  "data_mahasiswa" : [
+    {
+      "id" : 1,
+      "nama" : "fajar"
+    },
+    {
+      "id" : 2,
+      "nama" : "susanti"
+    },
+    {
+      "id" : 3,
+      "nama" : "dika"
+    }
+  ]
+}
