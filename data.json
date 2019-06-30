@@ -1,36 +1,30 @@
 {
-  "catalog" : [
+  "config" :
+  [
     {
-      "id" : "bk102",
-      "author" : "Ralls,Kim",
-      "genre" : "Fantasy",
-      "price" : 5.95,
-      "publish_date" : "2000-12-16",
-      "description" : "A former architect battles corporate zombies,an evil sorceress, and her own childhood to become queen of the world"
+      "id" : 1,
+      "option" : "site_title",
+      "value" : "Jagowebdev"
     },
     {
-      "id" : "bk102",
-      "author" : "Ralls,Kim",
-      "genre" : "Fantasy",
-      "price" : 5.95,
-      "publish_date" : "2000-12-16",
-      "description" : "A former architect battles corporate zombies,an evil sorceress, and her own childhood to become queen of the world"
+      "id" : 2,
+      "option" : "site_description",
+      "value" : "Komunitas Jagowebdev (JWD) akan membantu anda menjadi \"jago\" dibidang Web Development"
     },
     {
-      "id" : "bk102",
-      "author" : "Ralls,Kim",
-      "genre" : "Fantasy",
-      "price" : 5.95,
-      "publish_date" : "2000-12-16",
-      "description" : "A former architect battles corporate zombies,an evil sorceress, and her own childhood to become queen of the world"
+      "id" : 3,
+      "option" : "site_url",
+      "value" : "https:\/\/jagowebdev.com"
     },
     {
-      "id" : "bk102",
-      "author" : "Ralls,Kim",
-      "genre" : "Fantasy",
-      "price" : 5.95,
-      "publish_date" : "2000-12-16",
-      "description" : "A former architect battles corporate zombies,an evil sorceress, and her own childhood to become queen of the world"
+      "id" : 4,
+      "option" : "path",
+      "value" : "user\\htdocs\\jwd"
+    },
+    {
+      "id" : 5,
+      "option" : "themes",
+      "value"  : "jwd"
     }
   ]
 }
