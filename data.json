@@ -1,30 +1,31 @@
 {
-  "config" :
-  [
-    {
-      "id" : 1,
-      "option" : "site_title",
-      "value" : "Jagowebdev"
-    },
-    {
-      "id" : 2,
-      "option" : "site_description",
-      "value" : "Komunitas Jagowebdev (JWD) akan membantu anda menjadi \"jago\" dibidang Web Development"
-    },
-    {
-      "id" : 3,
-      "option" : "site_url",
-      "value" : "https:\/\/jagowebdev.com"
-    },
-    {
-      "id" : 4,
-      "option" : "path",
-      "value" : "user\\htdocs\\jwd"
-    },
-    {
-      "id" : 5,
-      "option" : "themes",
-      "value"  : "jwd"
+    "catalog": {
+        "book": [
+            {
+                "id": "bk101",
+                "author": "Gambardella, Matthew",
+                "genre": "Computer"
+            },
+            {
+                "id": "bk102",
+                "author": "Ralls, Kim",
+                "genre": "Mignight Rain"
+            }
+        ],
+        "catalog": {
+            "catalog1": {
+                "nama": "shoppe",
+                "url": "https:\/\/shoppe.com"
+            },
+            "catalog2": {
+                "nama": "buakalapak",
+                "url": "https:\/\/bukalapak.com"
+            },
+            "catalog3": {
+                "nama": "tokopedia",
+                "url": "https:\/\/tokopedia.com"
+            }
+        },
+        "secure": true
     }
-  ]
 }
