@@ -2,7 +2,7 @@
 <toko_buku>
   <book>
     <id>bk101</id>
-    <author>Gambardella, Matthew</author>
+    <author>Fajar Subhan</author>
     <title>XML Developer's Guide</title>
     <genre>Computer</genre>
     <price>44.95</price>
