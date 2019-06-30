@@ -1,45 +1,34 @@
 <?php
-$link = mysqli_connect("localhost","root","4dm1n242","test1");
-mysqli_set_charset($link,"UTF-8");
-$query = "SELECT * FROM belajar1";
-$result = mysqli_query($link,$query);
+  $json = '{"site_option":
+		{"site_title":"Jagowebdev"
+		  ,"site_description":"Komunitas Jagowebdev (JWD) akan membantu anda menjadi \"Jago\" dibidang Web Development"
+		  ,"site_url":"https://jagowebdev.com"
+		  ,"themes":"jwd"
+		}
+	  ,"site_db":
+		{"host":"localhoswadat"wawad
+		  ,"user":"root"
+		  ,"pass":"defult"
+		}
+	}';
 
-while($data=mysqli_fetch_assoc($result)) {
-  $json["site_options"]["option"] = $data["options"];
-}
-
-$database = array(
-  "host" => "localhost",
-  "user" => [
-      "admin" => "admin242",
-      "staff" => "staff242"
-    ],
-  "password" => false,
-  "db" => "test"
-);
-
+  $decode1 = json_decode($json,true);
 echo "<pre>";
-print_r($database);
+print_r($decode1);
 echo "</pre>";
 
 echo "<hr>";
-echo "<br>";
 
-$encode = json_encode($database,JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
-echo "<pre>";
-echo $encode;
-echo "</pre>";
+  $decode2 = json_decode($json,true);
+
+if(json_last_error_msg() === "No error") {
+  echo "<pre>";
+  print_r($decode2);
+  echo "</pre>";
+}
+else {
+  echo json_last_error_msg();
+}
+
+
  ?>
- <!DOCTYPE html>
- <html lang="en" dir="ltr">
-   <head>
-     <meta charset="utf-8">
-     <title></title>
-   </head>
-   <body>
-
-   </body>
-   <script>
-    
-   </script>
- </html>
