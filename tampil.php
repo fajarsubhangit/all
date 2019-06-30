@@ -1,20 +1,13 @@
 <?php
-$load = simplexml_load_file("file.xml");
+$file_json = file_get_contents("data.json");
 
-if(!$load) {
-  echo "file tidak ada";
-}
-else {
-  echo "<h1>Data Buku</h1>";
-  foreach($load as $key => $value) {
-      echo "nama :". $value->id ."<br>";
-      echo "string :". $value->author."<br>";
-      echo "title :". $value->title."<br>";
-      echo "genre :".$value->genre."<br>";
-      echo "price :".$value->price."<br>";
-      echo "publish_date :".$value->publish_date."<br>";
-      echo "description :".$value->description."<br>";
-      echo "<hr>";
-  }
+$decode = json_decode($file_json,true);
+
+echo "<pre>";
+print_r($decode);
+echo "</pre>";
+
+foreach($decode as $key) {
+  echo $key[0]["id"];
 }
  ?>

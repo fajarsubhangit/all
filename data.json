@@ -1,17 +1,36 @@
 {
-  "data_mahasiswa" : [
+  "catalog" : [
     {
-      "id" : 1,
-      "nama" : "fajar"
+      "id" : "bk102",
+      "author" : "Ralls,Kim",
+      "genre" : "Fantasy",
+      "price" : 5.95,
+      "publish_date" : "2000-12-16",
+      "description" : "A former architect battles corporate zombies,an evil sorceress, and her own childhood to become queen of the world"
     },
     {
-      "id" : 2,
-      "nama" : "susanti"
+      "id" : "bk102",
+      "author" : "Ralls,Kim",
+      "genre" : "Fantasy",
+      "price" : 5.95,
+      "publish_date" : "2000-12-16",
+      "description" : "A former architect battles corporate zombies,an evil sorceress, and her own childhood to become queen of the world"
     },
     {
-      "id" : 3,
-      "nama" : "dika"
+      "id" : "bk102",
+      "author" : "Ralls,Kim",
+      "genre" : "Fantasy",
+      "price" : 5.95,
+      "publish_date" : "2000-12-16",
+      "description" : "A former architect battles corporate zombies,an evil sorceress, and her own childhood to become queen of the world"
+    },
+    {
+      "id" : "bk102",
+      "author" : "Ralls,Kim",
+      "genre" : "Fantasy",
+      "price" : 5.95,
+      "publish_date" : "2000-12-16",
+      "description" : "A former architect battles corporate zombies,an evil sorceress, and her own childhood to become queen of the world"
     }
-  ],
-  "age" : 22
+  ]
 }
