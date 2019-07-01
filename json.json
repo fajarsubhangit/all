@@ -1,0 +1,14 @@
+{
+  "error" : 0,
+  "status" : "tidak error",
+  "mahasiswa" : [
+    {
+      "nim" : 123113123,
+      "nama" : "Fajar Subhan"
+    },
+    {
+      "nim" : 123123213,
+      "nama" : "Andi"
+    }
+  ]
+}
