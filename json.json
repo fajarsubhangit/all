@@ -10,5 +10,13 @@
       "nim" : 123123213,
       "nama" : "Andi"
     }
-  ]
+  ],
+  "hobi" : {
+    0 : {
+      "nama" :["coding","sepak bola"]
+    },
+    1 : {
+      "nama" :["makan","tidir"]
+    }
+  }
 }
